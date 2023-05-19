@@ -2,9 +2,9 @@ import { ButtonHTMLAttributes } from 'react'
 import styled from 'styled-components'
 
 
-type HEX = `#${string}`;
+type hexCode = `#${string}`;
 
-type Color = HEX;
+type Color = hexCode;
 
 const showMessageBackgroundColor: Color = '#1568E5'
 const smallButtonBackgroundColor: Color = '#FD3944'
@@ -41,6 +41,7 @@ const StyledButton = styled.button<ButtonHTMLAttributes<HTMLButtonElement> & { s
     visibility: ${({ showMessage }) => (showMessage ? 'visible' : 'hidden')};
   }
 `
+
   /**
    * Returns floating action button which is a button for support.
    *
